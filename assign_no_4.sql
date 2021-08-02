@@ -91,3 +91,16 @@ order by 1
 select stor_name 'Store name',ord_date 'Latest purchase by Store'from sales s 
 join stores st on (s.stor_id=st.stor_id) 
 order by ord_date desc
+
+select * from titles (selecting whole table)
+select title from titles (selecting single )
+select title , price from titles ( multiple)
+select title book_name , price from titles (title renamed to book _ name)
+select title as "book name" , price from titles (as keyword )
+select * from titles where price > 10
+select * from titles where price between 2 and 10
+select * from titles where  type = 'business'
+select * from titles where type in ('business' , 'psychology');
+select * from titles where title like 'The%'
+select * from titles where title like '_e%'
+select * from titles where  type = 'business' and price>10;
